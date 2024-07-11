@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       Post Selector
  * Description:       Select published posts for DMG.
- * Version:           22.1.0
+ * Version:           1.1.0
  * Author:            Chris Cullen
  * Text Domain:       dmg-plugin
  *
