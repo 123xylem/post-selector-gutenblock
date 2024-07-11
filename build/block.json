@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/post-selector",
+  "version": "1.0.0",
+  "title": "Post Selector",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Select published posts.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "customClassName": true
+  },
+  "textdomain": "post-selector",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {
+    "selectedPostID": {
+      "type": "integer",
+      "default": 12
+    },
+    "selectedPostTitle": {
+      "type": "string",
+      "default": "Default Title"
+    },
+    "selectedPostURL": {
+      "type": "string",
+      "default": "http://local-dev.local/Default/"
+    }
+  }
+}

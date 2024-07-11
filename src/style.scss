@@ -1,0 +1,16 @@
+.wp-block-create-block-post-selector {
+	color: #fff;
+	padding: 4px 6px;
+	a {
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+.selectablePost {
+	cursor: pointer;
+	padding: 2px;
+	&:hover {
+		text-decoration: underline;
+	}
+}
