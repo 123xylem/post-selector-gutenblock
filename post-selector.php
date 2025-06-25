@@ -1,25 +1,25 @@
 <?php
 
 /**
- * Plugin Name:       Post Selector
- * Description:       Select published posts for DMG.
+ * Plugin Name:       DMG Read More
+ * Description:       A Gutenberg block for selecting published posts as stylized "Read More" links.
  * Version:           1.1.0
  * Author:            Chris Cullen
- * Text Domain:       dmg-plugin
+ * Text Domain:       dmg-read-more
  *
- * @package CreateBlock
+ * @package DMGReadMore
  */
 
 if (!defined('ABSPATH')) {
 	exit;
 }
 
-function create_block_post_selector_block_init()
+function create_block_dmg_read_more_block_init()
 {
-	// unregister_block_type('create-block/post-selector');
+	// unregister_block_type('dmg/read-more');
 	register_block_type(__DIR__ . '/build');
 }
-add_action('init', 'create_block_post_selector_block_init');
+add_action('init', 'create_block_dmg_read_more_block_init');
 
 function register_custom_meta()
 {

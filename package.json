@@ -1,7 +1,7 @@
 {
-	"name": "post-selector",
+	"name": "dmg-read-more",
 	"version": "1.1.0",
-	"description": "Find posts containing custom blocks.",
+	"description": "A Gutenberg block for selecting published posts as stylized Read More links.",
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",

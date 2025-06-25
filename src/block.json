@@ -1,19 +1,19 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/post-selector",
+	"name": "dmg/read-more",
 	"version": "1.0.0",
-	"title": "Post Selector",
+	"title": "DMG Read More",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Select published posts.",
+	"description": "Select published posts for DMG Read More links.",
 	"example": {},
 	"supports": {
 		"html": false,
 		"align": true,
 		"customClassName": true
 	},
-	"textdomain": "post-selector",
+	"textdomain": "dmg-read-more",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

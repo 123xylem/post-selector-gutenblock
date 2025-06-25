@@ -15,7 +15,7 @@ export default function Edit({
 	const [searchTerm, setSearchTerm] = useState("");
 	const [currentPage, setCurrentPage] = useState(1);
 
-	useBlockMetaUpdate(postId, "has_post_selector", "create-block/post-selector");
+	useBlockMetaUpdate(postId, "has_post_selector", "dmg/read-more");
 
 	const posts = useSelect(
 		(select) => {
@@ -40,7 +40,7 @@ export default function Edit({
 
 			return select("core").getEntityRecords("postType", "post", query);
 		},
-		[searchTerm, currentPage],
+		[searchTerm, currentPage]
 	);
 
 	const handlePostChange = (postId) => {
@@ -57,7 +57,7 @@ export default function Edit({
 	return (
 		<Fragment>
 			<InspectorControls>
-				<PanelBody title={__("Post Selection", "post-selector")}>
+				<PanelBody title={__("Post Selection", "dmg-read-more")}>
 					<input
 						placeholder="Search for posts"
 						type="text"
@@ -80,7 +80,7 @@ export default function Edit({
 								</div>
 							))}
 							{posts.length === 0 && (
-								<p>{__("No posts found", "post-selector")}</p>
+								<p>{__("No posts found", "dmg-read-more")}</p>
 							)}
 							{posts.length > 0 && (
 								<div
@@ -97,20 +97,20 @@ export default function Edit({
 											setCurrentPage((prev) => Math.max(prev - 1, 1))
 										}
 									>
-										{__("Previous", "post-selector")}
+										{__("Previous", "dmg-read-more")}
 									</Button>
 									<Button
 										isSecondary
 										disabled={posts.length < 5}
 										onClick={() => setCurrentPage((prev) => prev + 1)}
 									>
-										{__("Next", "post-selector")}
+										{__("Next", "dmg-read-more")}
 									</Button>
 								</div>
 							)}
 						</div>
 					) : (
-						<p>{__("No posts found", "post-selector")}</p>
+						<p>{__("No posts found", "dmg-read-more")}</p>
 					)}
 				</PanelBody>
 			</InspectorControls>
